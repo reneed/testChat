@@ -24,6 +24,8 @@ io.sockets.on('connection', function(socket) {
             io.sockets.emit('system', nickname, users.length, 'login');
         };
     });
+	
+	
     //user leaves
     socket.on('disconnect', function() {
         if (socket.nickname != null) {
